@@ -3,7 +3,7 @@
 使用include自定义标签+jq插入html片段到页面中
 
 ## html
-```
+``` html
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <h1>五大洲 （地球陆地分成的五大版块）</h1>
   <ul id="j-ul"> 
       <li>非洲</li>
       <li>大洋洲</li>
@@ -20,8 +21,8 @@
       <li>美洲</li>
       <li>欧洲</li>
   </ul>
-  <include src="a.tpl"></include>
-  <include src="b.tpl"></include>
+  <include src="template/a.tpl"></include>
+  <include src="template/b.tpl"></include>
 
 </body>
 </html>
@@ -29,7 +30,7 @@
 
 ## js
 
-```
+``` js
   'use strict';
   /**
    * inlcude加载html
